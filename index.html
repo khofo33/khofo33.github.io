@@ -1,14 +1,182 @@
-dotCount = (dotCount % 3) + 1;
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wuthering Waves MOD - Free Premium Features</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 35px 25px;
+      border-radius: 15px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    .game-logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 25px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .btn-download {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 15px 35px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-download:hover {
+      background-color: #c2185b;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #aaa;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-top: 30px;
+      text-align: left;
+      color: #ffccff;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 25px 15px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .btn-download {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+      }
+
+      ul {
+        padding-left: 15px;
+      }
+
+      .section-title {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      ul li {
+        font-size: 14px;
+      }
+
+      .game-logo {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="loading-message" style="margin-bottom: 20px; text-align: center; font-size: 16px; color: #ccc;">
+      ⏳ جارٍ التوجيه إلى رابط التحميل المناسب<span id="dots">.</span>
+    </div>
+
+    <img src="https://i.postimg.cc/nryQRkZH/wuthering-waves-1sbdg.jpg" alt="Game Icon" class="game-logo">
+    <h1>Wuthering Waves MOD APK</h1>
+    <p><strong>Wuthering Waves</strong> هي لعبة RPG بعالم مفتوح، فيها قتال سريع، شخصيات فريدة، وعالم غامض بعد كارثة غامضة.</p>
+
+    <h2 class="section-title">🔍 المميزات:</h2>
+    <ul>
+      <li>⚔️ قتال سريع ومركّب مع حركات رائعة</li>
+      <li>🌀 شخصيات (Resonators) بقدرات خارقة</li>
+      <li>🌍 عالم مفتوح كبير ومتغير</li>
+      <li>🎵 موسيقى وتأثيرات صوتية جذابة</li>
+      <li>💎 نسخة MOD: موارد غير محدودة + بدون إعلانات</li>
+    </ul>
+
+    <h2 class="section-title">📥 اختر نظامك:</h2>
+    <div id="manual-download" style="display: none; flex-direction: column; gap: 15px;">
+      <a href="https://your-android-link.com" class="btn-download">📱 تحميل للأندرويد</a>
+      <a href="https://your-ios-link.com" class="btn-download">🍎 تحميل للآيفون</a>
+      <a href="https://your-windows-link.com" class="btn-download">💻 تحميل للويندوز</a>
+      <a href="https://your-mac-link.com" class="btn-download">🍏 تحميل للماك</a>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 WaveMods. هذا الموقع غير تابع لـ Kuro Games.</footer>
+
+  <script>
+    const links = {
+      android: "https://your-android-link.com",
+      ios: "https://your-ios-link.com",
+      windows: "https://your-windows-link.com",
+      mac: "https://your-mac-link.com"
+    };
+
+    let dotCount = 1;
+    const dotsEl = document.getElementById("dots");
+    setInterval(() => {
+      dotCount = (dotCount % 3) + 1;
       dotsEl.textContent = ".".repeat(dotCount);
     }, 500);
 
-    // التوجيه التلقائي
     function redirectToPlatform() {
       const ua = navigator.userAgent.toLowerCase();
 
       if (ua.includes("android")) {
         window.location.href = links.android;
-      } else if (ua.includes("iphone")  ua.includes("ipad")  ua.includes("ipod")) {
+      } else if (ua.includes("iphone") || ua.includes("ipad") || ua.includes("ipod")) {
         window.location.href = links.ios;
       } else if (ua.includes("macintosh")) {
         window.location.href = links.mac;
@@ -18,7 +186,6 @@ dotCount = (dotCount % 3) + 1;
         document.getElementById("manual-download").style.display = "flex";
       }
 
-      // حيد نص التوجيه
       document.getElementById("loading-message").style.display = "none";
     }
 
